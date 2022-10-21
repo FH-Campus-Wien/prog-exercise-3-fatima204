@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         oneMonthCalendar(30, 2);
-        //guessingGame(0);
-        //int a [] = {1,2,3,4,5,6};
-        //int b [] = {7,8,9,10,11};
-        //swapArrays();
+        guessingGame(0);
+        int a [] = {1,2,3,4,5,6};
+        int b [] = {7,8,9,10,11};
+        swapArrays();
     }
 
     public static void oneMonthCalendar (int numberofdays, int daybegin) {
@@ -57,24 +57,27 @@ public class App {
                 } else if (Playerguess > numberToGuess) {
                     System.out.println("The number AI picked is lower than your guess.");
                 }
-            }else{
-            System.out.println("You lost! Have you ever heard of divide or conquer?");
-            break;
+
+            } else {
+                System.out.println("You lost! Have you ever heard of divide or conquer?");
+                break;
             }
         }
+
     }
 
-    public static void swapArrays ( int array1, int array2){
+    public static void swapArrays () {
 
         int i;
         int j;
         int swap;
 
-        int a [] = {};
-        int b [] = {};
+        int a[] = {};
+        int b[] = {};
 
-        for(i=0; i< a.length; i++){
-            for(j=0; j< b.length; j++) {
+        for (i = 0; i < a.length; i++) {
+            for (j = 0; j < b.length; j++) {
+
                 swap = a[i];
                 a[i] = b[j];
                 b[j] = swap;
@@ -84,6 +87,7 @@ public class App {
             }
         }
     }
+    public static void checkDigit (int code){
 
-
+    }
 }
